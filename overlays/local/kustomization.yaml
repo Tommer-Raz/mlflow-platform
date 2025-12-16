@@ -1,0 +1,6 @@
+namespace: mlflow
+resources:
+- ../../base/deployment.yaml
+- ../../base/service.yaml
+- ../../base/ingress.yaml
+- ../../base/namespace.yaml
