@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: mlflow
+  namespace: argocd   # ArgoCD installation namespace
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/Tommer-Raz/mlflow-platform.git
+    path: overlays/local
+    targetRevision: HEAD
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: mlflow   # where MLflow will be deployed
+  syncPolicy:
+    automated:
+      enabled: true
+      prune: true
+      selfHeal: true
