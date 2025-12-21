@@ -6,4 +6,4 @@ resources:
 - mlflow/service.yaml
 - mlflow/ingress.yaml
 - namespace.yaml
-- postgres
+- ./postgres
