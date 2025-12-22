@@ -26,6 +26,9 @@ spec:
               --default-artifact-root=/mlruns
         ports:
           - containerPort: 5000
+        envFrom:
+          - secretRef:
+              name: mlflow-secret
         resources:
           requests:
             memory: 512Mi
