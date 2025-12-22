@@ -28,7 +28,7 @@ spec:
           - containerPort: 5000
         envFrom:
           - secretRef:
-              name: mlflow-secret
+              name: postgres-secret
         resources:
           requests:
             memory: 512Mi
