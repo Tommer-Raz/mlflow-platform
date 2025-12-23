@@ -1,3 +1,4 @@
 namespace: mlflow
 resources:
 - ../../base
+- minio-bucket-job.yaml
