@@ -5,6 +5,7 @@ resources:
 - mlflow/deployment.yaml
 - mlflow/service.yaml
 - mlflow/ingress.yaml
+- mlflow/configmap.yaml
 - namespace.yaml
 - postgres
 - minio
