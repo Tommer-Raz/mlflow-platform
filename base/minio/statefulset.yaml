@@ -16,11 +16,9 @@ spec:
       containers:
         - name: minio
           image: minio/minio:latest
-          command:
-            - /bin/sh
-            - -c
           args:
-            - minio server /data"
+            - server 
+            - /data
           ports:
             - containerPort: 9000
               name: api
