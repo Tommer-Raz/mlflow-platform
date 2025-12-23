@@ -4,5 +4,5 @@ metadata:
   name: mlflow-config
 data:
   MLFLOW_ARTIFACT_ROOT: s3://mlflow
-  MLFLOW_S3_ENDPOINT_URL: http://minio:9000
+  MLFLOW_S3_ENDPOINT_URL: http://minio.mlflow.svc.cluster.local:9000
   AWS_DEFAULT_REGION: us-east-1
