@@ -19,9 +19,13 @@ spec:
           args:
             - server 
             - /data
+            - --console-address
+            - ":9001"
           ports:
             - containerPort: 9000
               name: api
+            - containerPort: 9001
+              name: console
           envFrom:
             - secretRef:
                 name: minio-secret
