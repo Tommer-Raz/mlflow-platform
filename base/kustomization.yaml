@@ -7,3 +7,4 @@ resources:
 - mlflow/ingress.yaml
 - namespace.yaml
 - postgres
+- minio
