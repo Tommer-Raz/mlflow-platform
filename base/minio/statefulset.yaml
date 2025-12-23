@@ -28,7 +28,7 @@ spec:
               name: console
           envFrom:
             - secretRef:
-                name: minio-secret
+                name: minio-creds
           resources:
             requests:
               cpu: 100m
